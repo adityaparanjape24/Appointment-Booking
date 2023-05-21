@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" 
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" 
+        crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+<title> Sign Up </title>
+
+</head>
+<body style="background-color: #0093E9;
+background-image: linear-gradient(180deg, #0093E9 5%, #80D0C7 99%)">
+
+<div class="container-fluid my-4">
+  <nav class="navbar sticky-top navbar navbar-expand-lg navbar-dark bg-dark"> 
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">Appointment Booking </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="/AboutUs">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="/home">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <button class="btn btn-primary rounded-pill ml-2" role="button" formaction="/">Login</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-primary rounded-pill ml-2" role="button" formaction='/logout'>Logout</button>
+        </li>
+      </ul>
+    </form>
+    </div>
+  </div>
+  </nav> <br>
+
+
+    <div class="container-fluid">
+    
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img src="AboutUs1.jpg"
+                class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <form action="/register" method="post">
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                  <p class="lead fw-normal mb-0 me-3">Sign Up with</p>
+                  <button type="button" class="btn btn-primary rounded-circle mx-2">
+                    <i class="bi bi-google"></i>
+                  </button>
+      
+                  <button type="button" class="btn btn-primary rounded-circle mx-2">
+                    <i class="bi bi-facebook"></i>
+                  </button>
+      
+                  <button type="button" class="btn btn-primary rounded-circle mx-2">
+                    <i class="bi bi-microsoft"></i>
+                  </button>
+                </div>
+      
+                <div class="d-flex my-4">
+                  <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                </div>
+      
+                 <!-- Username input -->
+                <div class="form-outline col-md-9 mb-4" >
+                  <div class="form-floating">
+                  <input type="username" id="username" name="username" class="form-control"
+                    placeholder="Enter a valid username" />
+                  <label for="username">Username</label>
+                </div>
+              </div>
+      
+                <!-- Password input -->
+                <div class="form-outline col-md-9 mb-4">
+                  <div class="form-floating">
+                  <input type="password" id="password" name="password" class="form-control"
+                    placeholder="Enter password" />
+                    <label for="password">Password</label>
+                  </div>
+              </div>
+      
+                <div class="col-md-9 mb-4">
+                  <button type="submit" class="btn btn-primary btn-lg rounded-pill"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Sign Up</button>
+                </div>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid my-5">
+
+          <!-- Footer -->
+          <footer class="text-center text-lg-start text-white" style="background-color:#0275d8">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4" style="background-color: #1c0a82">
+              <!-- Left -->
+              <div class="me-5">
+                <span>Get connected with us on social networks:</span>
+              </div>
+              <!-- Left -->
+    
+              <!-- Right -->
+              <div>
+                <a href="" class="text-white m-3">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white m-3">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="" class="text-white m-3">
+                  <i class="bi bi-google"></i>
+                </a>
+                <a href="#" class="text-white m-3">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="" class="text-white m-3">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="#" class="text-white m-3">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </section>
+        
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold">Dept Of Information Technology </h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #1c0a82; height: 2px" />
+                    
+                  </div>
+                  <!-- Grid column -->
+    
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Departments</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #1c0a82; height: 2px" />
+                    <p>
+                      <a href="" class="text-white"> Mechnical </a>
+                    </p>
+                    <p>
+                      <a href="" class="text-white">Electrical </a>
+                    </p>
+                    <p>
+                      <a href="" class="text-white">ENTC </a>
+                    </p>
+                    <p>
+                      <a href="" class="text-white">IT</a>
+                    </p>
+                    <p>
+                      <a href="" class="text-white">Computer Science</a>
+                    </p>
+                    <p>
+                      <a href="" class="text-white">AI & DS</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+    
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Location</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #1c0a82; height: 2px" />
+                    <p style="justify-content: center;">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8382951222097!2d73.80512957130699!3d18.490982444134154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfdad7143a4f%3A0xabd31c8f9e6eca9a!2sMarathwada%20Mitra%20Mandal&#39;s%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1684646051364!5m2!1sen!2sin" width="230" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                    </p>
+    
+                  </div>
+                  <!-- Grid column -->
+    
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-2">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Contact Us</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #1c0a82; height: 2px" />
+                    <p>Sr.No. 18, Plot No. 5/3, CTS No.205, 
+                      Vadar Vasti Rd, behind Vandevi Temple,
+                       Karve Nagar, Pune, Maharashtra 411052</p>
+                    <p>
+                      <i class="bi bi-envelope-fill"></i><a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=adityaparanjape2020.it@mmcoe.edu.in" target="_blank"
+                        class="text-white"> adityaparanjape2020.it@mmcoe.edu.in </a>
+                    </p>
+                    <p>
+                      <i class="bi bi-telephone-fill"></i><a href="tel:+91 9112805395" class="text-white"> +91 9112805395
+                      </a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </section>
+            <!-- Section: Links  -->
+    
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+              © 2023 Copyright:
+              <a class="text-white" href="">Dept of Information Technology, MMCOE</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+    
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"></script>
+        <script src="/script.js"></script>
+    
+    </body>
+    
+    </html>
